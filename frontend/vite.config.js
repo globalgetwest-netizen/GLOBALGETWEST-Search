@@ -8,6 +8,7 @@ export default defineConfig({
       manifest: {
         name: 'GLOBALGETWEST',
         short_name: 'GLOBALGETWEST',
+        description: 'GLOBALGETWEST Web App',
         start_url: '/',
         display: 'standalone',
         background_color: '#ffffff',
@@ -16,6 +17,11 @@ export default defineConfig({
           {
             src: '/icon.png',
             sizes: '192x192',
+            type: 'image/png'
+          },
+          {
+            src: '/icon.png',
+            sizes: '512x512',
             type: 'image/png'
           }
         ]
