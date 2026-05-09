@@ -31,4 +31,6 @@ async function search() {
   });
 
   document.getElementById("results").innerHTML = html;
+}if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/sw.js");
 }
