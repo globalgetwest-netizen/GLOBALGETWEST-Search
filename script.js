@@ -1,7 +1,7 @@
 // LOAD DASHBOARD
 window.onload = async () => {
   try {
-    const res = await fetch("http://localhost:5000/api/status");
+    const res = await fetch("https://globalgetwest-search.onrender.com/api/status");
     const data = await res.json();
 
     document.getElementById("node").textContent = data.node;
@@ -16,7 +16,7 @@ window.onload = async () => {
 async function search() {
   const query = document.getElementById("searchInput").value;
 
-  const res = await fetch(`http://localhost:5000/api/search?q=${query}`);
+  const res = await fetch(`https://globalgetwest-search.onrender.com/api/search?q=${query}`);
   const data = await res.json();
 
   let html = "";
